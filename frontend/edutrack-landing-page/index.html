@@ -1,11 +1,449 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing Page Edutrack (Atividade)</title>
+
 </head>
+
 <body>
-    
+
+  <!-- HEADER + MENU -->
+  <header class="navbar">
+    <div class="container">
+
+      <a href="#inicio" class="navbar-logo">EduTrack</a>
+
+      <!-- NAV DESKTOP -->
+      <nav class="navbar-inner">
+        <ul class="navbar-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#solucoes">Funcionalidades</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- BOTÕES (LOGIN + COMEÇAR AGORA) -->
+      <div class="navbar-botoes">
+        <!-- BOTÃO LOGIN -->
+        <a href="#login" class="navbar-login-link" onclick="abrirAutenticacao('login')">Login</a>
+        <!-- BOTAO (COMEÇAR AGORA) -->
+        <button class="navbar-button">Começar agora</button>
+      </div>
+
+
+      <!-- HAMBURGER MOBILE -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+
+
+      <!-- MENU MOBILE -->
+      <nav class="nav-mobile" id="navMobile">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#" onclick="abrirAutenticacao('login')" style="color: var(--cor-primaria); font-weight: 800;">Login</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção INÍCIO -->
+    <section class="hero revelar" id="inicio">
+      <span class="hero-label">Plataforma de aprendizado do futuro</span>
+        <h1 class="hero-titulo">
+          Gestão de aprendizado inteligente para
+          <span class="hero-span">escolas técnicas</span>
+        </h1>
+
+        <p class="hero-subtitulo">
+          Centralize avaliações, presença e progresso dos alunos em uma interface intuitiva e potente.
+        </p>
+
+        <div class="hero-botoes">
+          <button class="hero-btn-funcionalidades">
+            Explorar funcionalidades
+          </button>
+          <button class="hero-btn-saiba-mais">Saiba mais</button>
+        </div>
+
+        <div class="hero-estatisticas">
+          <!-- Primeiro item -->
+          <div class="hero-estatisticas-item">
+            <span class="dados-numeros" data-target="120" data-prefix="+">0</span>
+            <span class="dados-descricao">escolas técnicas</span>
+          </div>
+
+          <!-- Segundo item -->
+          <div class="hero-estatisticas-item">
+            <span class="dados-numeros" data-target="48" data-prefix="+" data-suffix=" mil">0 mil</span>
+            <span class="dados-descricao">alunos ativos</span>
+          </div>
+
+          <!-- Terceiro item -->
+          <div class="hero-estatisticas-item">
+            <span class="dados-numeros" data-target="4.9" data-suffix=" ★" data-is-float="true">0 ★</span>
+            <span class="dados-descricao">avaliação média</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Seção SOBRE -->
+    <section class="sobre revelar" id="sobre">
+      <div class="container">
+        <!-- Primeira coluna -->
+        <div class="sobre-texto">
+          <span class="sobre-span">Sobre a EduTrack</span>
+          <h2 class="sobre-titulo">
+            Tecnologia a serviço da educação de qualidade
+          </h2>
+          <p class="sobre-paragrafo">
+            Nossa missão é transformar a maneira como escolas técnicas operam, eliminando burocracias e fornecendo dados em tempo real para decisões pedagógicas precisas.
+          </p>
+
+          <p class="sobre-paragrafo">
+            Acreditamos que o professor deve focar no ensino, enquanto nossa tecnologia cuida da infraestrutura de dados e acompanhamento do discente.
+          </p>
+        </div>
+        <!-- Final primeira coluna -->
+
+        <!-- Início Segunda coluna -> Coluna dos pilares -->
+        <div class="sobre-pilares">
+          <h3 class="sobre-pilares-titulo">Os 4 pilares</h3>
+          <ul class="pilares-lista">
+              <li class="pilar">
+                <div class="pilar-icone">⚙️</div>
+                  <div>
+                    <strong class="pilar-titulo">Foco Técnico</strong>
+                    <span class="pilar-descricao">Módulos específicos para laboratórios e oficinas.</span>
+                  </div>
+              </li>
+
+              <li class="pilar">
+                <div class="pilar-icone">📊</div>
+                <div>
+                  <strong class="pilar-titulo">Dados Acionáveis</strong>
+                  <span class="pilar-descricao"
+                    >Dashboards que mostram o desempenho individual.</span
+                  >
+                </div>
+              </li>
+
+              <li class="pilar">
+                <div class="pilar-icone">👥</div>
+                <div>
+                  <strong class="pilar-titulo">Integração Total</strong>
+                  <span class="pilar-descricao"
+                    >Comunicação fluida entre coordenação e alunos.</span
+                  >
+                </div>
+              </li>
+
+              <li class="pilar">
+                <div class="pilar-icone">🔐</div>
+                <div>
+                  <strong class="pilar-titulo">Segurança Robusta</strong>
+                  <span class="pilar-descricao"
+                    >Dados protegidos com criptografia de ponta.</span
+                  >
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção SOLUÇÕES -->
+    <section class="solucoes revelar" id="solucoes">
+      <div class="container">
+          <header class="solucoes-header">
+            <h2>Por que escolher a EduTrack?</h2>
+            <p class="solucoes-descricao">
+              Soluções completas para o ecossistema de educação técnica
+              profissionalizante.
+            </p>
+          </header>
+
+          <div class="cards-grid">
+            <div class="card">
+              <div class="card-icone">📊</div>
+              <div class="card-titulo">
+                Relatórios Detalhados
+              </div>
+              <p class="card-descricao">
+                Visualize o crescimento de cada turma com gráficos interativos.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-icone">🎯</div>
+              <div class="card-titulo">Metas de Aprendizado</div>
+              <p class="card-descricao">
+                Defina competências específicas e acompanhe a proficiência
+                técnica.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-icone">🔔</div>
+              <div class="card-titulo">Alertas Inteligentes</div>
+              <p class="card-descricao">
+                Notificações automáticas sobre quedas de rendimento.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-icone">🤝</div>
+              <div class="card-titulo">Gestão de Parcerias</div>
+              <p class="card-descricao">
+                Conecte alunos a estágios diretamente pela plataforma.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-icone">📱</div>
+              <div class="card-titulo">App do Aluno</div>
+              <p class="card-descricao">
+                Acesso rápido a notas e materiais via mobile.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-icone">🔒</div>
+              <div class="card-titulo">LGPD Compliance</div>
+              <p class="card-descricao">
+                Gestão de dados em conformidade com a lei brasileira.
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Seção EQUIPE -->
+    <section class="equipe revelar" id="equipe">
+      <div class="container">
+        <h2>Quem está por trás da EduTrack</h2>
+
+        <div class="dados-equipe">
+          <!-- Primeiro Membro -->
+          <div class="membro-equipe">
+            <div class="avatar" style="background-color: #dbe1ff; color: #003ea8;">AL</div>
+            <h4>André Luiz</h4>
+            <span class="membro-cargo">CEO & Fundador</span>
+            <p class="membro-descricao">Especialista em gestão educacional com 15 anos de experiência.</p>
+          </div>
+
+          <!-- Segundo Membro -->
+          <div class="membro-equipe">
+            <div class="avatar" style="background-color: #dce9ff; color: #465780;">CM</div>
+            <h4>Carla Mendes</h4>
+            <span class="membro-cargo">CTO</span>
+            <p class="membro-descricao">Engenheira de software focada em arquiteturas escaláveis.</p>
+          </div>
+
+          <!-- Terceiro Membro -->
+          <div class="membro-equipe">
+            <div class="avatar" style="background-color: #ffb59c; color: #380c00;">PN</div>
+            <h4>Paulo Neto</h4>
+            <span class="membro-cargo">Head de Produto</span>
+            <p class="membro-descricao">Designer UX apaixonado por interfaces que facilitam o ensino.</p>
+          </div>
+
+          <!-- Quarto Membro -->
+          <div class="membro-equipe">
+            <div class="avatar" style="background-color: #d9e2ff; color: #051a40;">RC</div>
+            <h4>Rita Costa</h4>
+            <span class="membro-cargo">Sucesso do Cliente</span>
+            <p class="membro-descricao">Garante que cada escola extraia o máximo da plataforma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de CONTATO -->
+    <section id="contato revelar" class="contato">
+            <!-- Div container solicitada -->
+            <div class="container">
+                <div class="grid-contato">
+                    
+                    <!-- Lado Esquerdo: Informações -->
+                    <div class="lado-esquerdo">
+                        <div>
+                            <span class="rotulo-contato" style="color: rgba(255,255,255,0.7)">Contato</span>
+                            <h2>Vamos conversar?</h2>
+                            <p>Agende uma demonstração gratuita e veja como a EduTrack pode transformar sua escola.</p>
+                            
+                            <div class="info-lista">
+                                <div class="info-item">📧 contato@edutrack.com.br</div>
+                                <div class="info-item">📞 +55 (11) 4002-8922</div>
+                                <div class="info-item">📍 Av. Paulista, 1000 — SP</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 40px; font-size: 0.9rem; opacity: 0.7; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+                            Suporte técnico disponível 24/7 para escolas premium.
+                        </div>
+                    </div>
+
+                    <!-- Lado Direito: Formulário -->
+                    <div class="lado-direito">
+                        <div id="feedback-sucesso">Mensagem enviada! Voltando ao início...</div>
+                        
+                        <form id="form-contato" class="formulario-grupo">
+                            <div class="campo-caixa">
+                                <label class="rotulo-contato">Nome</label>
+                                <input type="text" class="entrada-contato" placeholder="Seu nome" required>
+                            </div>
+                            <div class="campo-caixa">
+                                <label class="rotulo-contato">Telefone</label>
+                                <input type="tel" class="entrada-contato" placeholder="(11) 99999-9999" required>
+                            </div>
+                            <div class="campo-caixa largura-total">
+                                <label class="rotulo-contato">E-mail</label>
+                                <input type="email" class="entrada-contato" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="campo-caixa largura-total">
+                                <label class="rotulo-contato">Mensagem</label>
+                                <textarea class="entrada-contato" placeholder="Como podemos ajudar sua escola?" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="botao-contato largura-total" id="btn-enviar">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+  </main>
+
+    <!-- Rodapé com container interno -->
+    <footer class="rodape" id="rodape">
+        <div class="container">
+            <a href="#" class="rodape-logo">EduTrack</a>
+            
+            <ul class="rodape-links">
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos</a></li>
+                <li><a href="#">Documentação</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+
+            <div class="rodape-direitos">
+                &copy; 2026 EduTrack. Criado por Bernardo Netto. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Telas de login - cadastro e recuperar senha -->
+    <dialog id="modal-autenticacao">
+      <div class="corpo-modal">
+        <button class="botao-fechar" id="botao-fechar" aria-label="Fechar">✕</button>
+
+        <!-- TELA: LOGIN -->
+        <div class="painel-tela" id="tela-login">
+          <div class="cabecalho-modal">
+            <h2 style="color:var(--login-titulo-cor);">Bem-vindo</h2>
+            <p>Acesse sua conta para continuar</p>
+          </div>
+          <div class="grade-social">
+            <button class="botao-social">
+              <svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google
+            </button>
+            <button class="botao-social">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+            </button>
+          </div>
+
+          <div class="separador">Ou e-mail</div>
+            <form onsubmit="return enviarFormulario(event)">
+              <div class="grupo-campo">
+                <label>E-mail</label>
+                <input type="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="grupo-campo">
+                <label>Senha</label>
+                <input type="password" placeholder="••••••••" required>
+              <div class="link-esqueceu">
+                <button type="button" class="botao-link" onclick="trocarTela('tela-senha')">Esqueceu a senha?</button>
+              </div>
+          </div>
+            <button type="submit" class="botao botao-primario botao-largura-total">Entrar no Painel</button>
+          </form>
+            <p class="rodape-modal">Não possui conta? <button class="botao-link" onclick="trocarTela('tela-cadastro')">Criar conta</button></p>
+        </div>
+
+        <!-- TELA: CADASTRO -->
+        <div class="painel-tela" id="tela-cadastro">
+          <div class="cabecalho-modal">
+            <h2 style="color:var(--cadastro-titulo-cor);">Criar Conta</h2>
+            <p>Junte-se a centenas de escolas</p>
+          </div>
+          <form onsubmit="return enviarFormulario(event)">
+            <div class="grupo-campo">
+                        <label>Nome da Instituição</label>
+                        <input type="text" placeholder="Ex: Escola EduTrack" required>
+            </div>
+            <div class="grupo-campo">
+              <label>E-mail Profissional</label>
+              <input type="email" placeholder="admin@escola.com" required>
+            </div>
+            <div class="grupo-campo">
+              <label>Senha</label>
+              <input type="password" placeholder="Mínimo 8 caracteres" required>
+            </div>
+              <button type="submit" class="botao botao-cadastro botao-largura-total">Criar Minha Conta</button>
+          </form>
+            <p class="rodape-modal">Já é membro? <button class="botao-link" onclick="trocarTela('tela-login')">Fazer Login</button></p>
+        </div>
+
+          <!-- TELA: RECUPERAR SENHA -->
+          <div class="painel-tela" id="tela-senha">
+                <div class="cabecalho-modal">
+                    <h2 style="color:var(--senha-titulo-cor);">Recuperar Senha</h2>
+                    <p>Enviaremos um link de acesso</p>
+                </div>
+                <form onsubmit="return enviarFormulario(event)">
+                    <div class="grupo-campo">
+                        <label>E-mail cadastrado</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                    <button type="submit" class="botao botao-primario botao-largura-total">Enviar Link</button>
+                </form>
+                <p class="rodape-modal"><button class="botao-link" onclick="trocarTela('tela-login')">← Voltar ao Login</button></p>
+          </div>
+
+        </div>
+    </dialog>
+
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <a href="#inicio" class="botao-topo" aria-label="Voltar ao topo">
+    ↑
+  </a>
 </body>
+
+<script src="js/script.js"></script>
+
 </html>
