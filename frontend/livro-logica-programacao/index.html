@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edécio Fernando — Pense em Código, Crie o Futuro</title>
+    <meta
+      name="description"
+      content="Aprenda lógica de programação com o Prof. Edécio Fernando. Conteúdo acadêmico para formar profissionais de elite que dominam código de verdade."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Edécio Fernando — Lógica de Programação"
+    />
+    <meta
+      property="og:description"
+      content="Domine a lógica e abandone o copia e cola."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800;12..96,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-tema="escuro">
+    <!-- Cabeçalho - MENU -->
+    <header class="cabecalho" id="cabecalho-principal" role="banner">
+      <div class="container">
+        <div class="cabecalho-conteudo">
+          <!-- Logo -->
+          <a
+            href="#inicio"
+            class="logo-box"
+            aria-label="Edécio Fernando — Início"
+          >
+            <span class="logo-icone" aria-hidden="true">&lt;/&gt;</span>
+            <span>Edécio Fernando</span>
+          </a>
+
+          <!-- Navegação desktop -->
+          <nav class="navegacao-desktop" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#autor">Autor</a>
+            <a href="#html">HTML5</a>
+            <a href="#css">CSS3</a>
+            <a href="#js">JavaScript</a>
+          </nav>
+
+          <!-- Ícone lua -->
+          <div class="controles-cabecalho">
+            <button class="botao-tema" id="btnTema" aria-label="Alterar tema">
+              <span class="tema-glow"></span>
+              <span class="tema-capsula">
+                <span class="tema-slider">
+                  <span class="icone-tema" id="iconeTema"></span>
+                </span>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo - MAIN -->
+    <main>
+      <!-- Seão HERO -->
+      <section class="secao-hero" id="inicio" aria-labelledby="titulo-hero">
+        <!-- Fundo decorativo -->
+        <div class="hero-fundo" aria-hidden="true">
+          <div class="hero-fundo-blob-1"></div>
+          <div class="hero-fundo-blob-2"></div>
+          <div class="hero-fundo-grade"></div>
+        </div>
+
+        <div class="container hero-grid">
+          <!-- Coluna esquerda -->
+          <div>
+            <!-- Badge lado esquerdo -->
+            <div class="hero-badge revelar revelar-1">
+              <span class="hero-badge-dot" aria-hidden="true"></span>
+              <span>Conteúdo Acadêmico</span>
+              <span class="hero-badge-linha" aria-hidden="true"></span>
+              <span>Lógica de Programação</span>
+            </div>
+
+            <!-- Título lado esquerdo -->
+            <h1 class="titulo-hero revelar revelar-2" id="titulo-hero">
+              Pense em<br />
+              <span class="linha-destaque">Código,</span><br />
+              Crie o Futuro.
+            </h1>
+
+            <!-- Descrição sobre título -->
+            <p class="descricao-hero revelar revelar-3">
+              Conteúdo acadêmico do Prof. Edécio Fernando Iepsen. Teoria e
+              prática para formar profissionais que dominam código e resolvem
+              problemas reais — sem depender de copia e cola.
+            </p>
+
+            <!-- Botões lado esquerdo -->
+            <div class="hero-botoes revelar revelar-4">
+              <a href="#html" class="btn-primario">
+                Começar agora
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 7h10M8 3l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#autor" class="btn-secundario"> Conheça o autor </a>
+            </div>
+
+            <!-- Estatísticas lado esquerdo -->
+            <div class="estatisticas-hero revelar revelar-5">
+              <div class="fotos-alunos" aria-label="Avatares de alunos">
+                <div class="foto-aluno">
+                  <img
+                    src="imagens/avatar01.svg"
+                    alt="Aluno"
+                    width="38"
+                    height="38"
+                  />
+                </div>
+                <div class="foto-aluno">
+                  <img
+                    src="imagens/avatar02.svg"
+                    alt="Aluno"
+                    width="38"
+                    height="38"
+                  />
+                </div>
+                <div class="foto-aluno">
+                  <img
+                    src="imagens/avatar03.svg"
+                    alt="Aluna"
+                    width="38"
+                    height="38"
+                  />
+                </div>
+                <div class="foto-aluno">
+                  <img
+                    src="imagens/avatar04.svg"
+                    alt="Aluna"
+                    width="38"
+                    height="38"
+                  />
+                </div>
+              </div>
+              <div class="stat-divisor" aria-hidden="true"></div>
+              <div>
+                <div class="stat-numero">+5.000</div>
+                <div class="stat-label">Estudantes ativos</div>
+              </div>
+              <div class="stat-divisor" aria-hidden="true"></div>
+              <div>
+                <div class="stat-numero">15+</div>
+                <div class="stat-label">Anos de experiência</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna direita — visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-glow"></div>
+
+            <!-- Card flutuante 1 -->
+            <div class="card-flutuante card-flutuante-1">
+              <div class="card-flutuante-titulo">Domínio</div>
+              <div class="card-flutuante-valor">Lógica Real</div>
+              <div class="card-flutuante-sub">✓ Sem copia e cola</div>
+            </div>
+
+            <!-- Livro -->
+            <div class="hero-livro-wrapper revelar">
+              <img
+                src="imagens/livro-programacao.jpg"
+                alt="Livro de lógica de programação do Prof. Edécio Fernando"
+                width="340"
+                loading="eager"
+              />
+            </div>
+
+            <!-- Card flutuante 2 -->
+            <div class="card-flutuante card-flutuante-2">
+              <div class="card-flutuante-titulo">Aprovação</div>
+              <div class="card-flutuante-valor">98%</div>
+              <div class="card-flutuante-sub">↑ de satisfação</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção AUTOR -->
+      <section class="secao-autor" id="autor" aria-labelledby="titulo-autor">
+        <div class="container autor-grid">
+          <!-- Visual -->
+          <div class="autor-visual revelar">
+            <div class="autor-pontos" aria-hidden="true"></div>
+            <div class="autor-moldura-externa">
+              <div class="autor-moldura-interna">
+                <img
+                  src="imagens/professor-livro.jpeg"
+                  alt="Prof. Edécio Fernando Iepsen"
+                  width="480"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="autor-selo" aria-label="15 anos de experiência">
+              <span class="autor-selo-numero">15+</span>
+              <span class="autor-selo-texto">Anos de<br />Experiência</span>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="autor-texto">
+            <span class="autor-label revelar">O Autor</span>
+
+            <h2 class="autor-titulo revelar revelar-2" id="titulo-autor">
+              Conheça a mente<br />
+              por trás da<br />
+              <span class="destaque">metodologia.</span>
+            </h2>
+
+            <p class="autor-paragrafo revelar revelar-3">
+              O Prof. Edécio Fernando Iepsen ensina lógica de programação com
+              foco em resolução de problemas reais, pensamento computacional e
+              construção profissional sólida. Sua abordagem elimina a
+              dependência de atalhos e forma programadores que realmente
+              entendem o que fazem.
+            </p>
+
+            <blockquote class="autor-citacao revelar revelar-4">
+              "O código é apenas a ferramenta. A lógica é a verdadeira arte."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Seção HTML5 -->
+      <section class="secao-tecnologia" id="html" aria-labelledby="titulo-html">
+        <div class="glow-laranja" aria-hidden="true"></div>
+
+        <div class="container grid-tecnologia">
+          <!-- Coluna esquerda: cards -->
+          <div>
+            <div class="numero-secao revelar" aria-hidden="true">01</div>
+
+            <div class="secao-cabecalho revelar revelar-2">
+              <div class="secao-titulo-row">
+                <h2
+                  class="secao-titulo"
+                  id="titulo-html"
+                  style="color: var(--cor-laranja)"
+                >
+                  HTML5
+                </h2>
+                <span class="secao-subtag" style="color: var(--cor-laranja)"
+                  >Semântico</span
+                >
+              </div>
+              <div
+                class="secao-descricao-topo"
+                style="color: var(--cor-laranja)"
+              >
+                A Base de Tudo
+              </div>
+              <p class="secao-descricao">
+                O HTML define a estrutura, organiza a web e entrega significado
+                real para navegadores, leitores de tela e mecanismos de busca.
+                Semântica que importa.
+              </p>
+            </div>
+
+            <div class="lista-topicos revelar revelar-3">
+              <article class="card-topico card-html">
+                <div class="card-topico-icone" aria-hidden="true">🏗️</div>
+                <h3>Semântica Estrutural</h3>
+                <p>
+                  Use <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                  <code>&lt;section&gt;</code> e
+                  <code>&lt;footer&gt;</code> para criar estruturas
+                  profissionais e acessíveis.
+                </p>
+              </article>
+
+              <article class="card-topico card-html">
+                <div class="card-topico-icone" aria-hidden="true">📋</div>
+                <h3>Formulários Inteligentes</h3>
+                <p>
+                  Inputs modernos com validação nativa, atributos semânticos e
+                  experiência de usuário superior.
+                </p>
+              </article>
+
+              <article class="card-topico card-html">
+                <div class="card-topico-icone" aria-hidden="true">♿</div>
+                <h3>Acessibilidade</h3>
+                <p>
+                  Interfaces inclusivas para todos os usuários. ARIA labels,
+                  roles e hierarquia semântica correta.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Coluna direita: mockup browser + terminal -->
+          <div class="revelar revelar-2">
+            <!-- Browser mockup -->
+            <div class="html-mockup" aria-label="Exemplo de estrutura HTML">
+              <div class="html-mockup-barra" aria-hidden="true">
+                <div class="terminal-bolinhas">
+                  <div class="terminal-bolinha terminal-bolinha-1"></div>
+                  <div class="terminal-bolinha terminal-bolinha-2"></div>
+                  <div class="terminal-bolinha terminal-bolinha-3"></div>
+                </div>
+                <div class="html-mockup-url">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 1l1.5 3h3L7 6.5l1 3L5 8l-3 1.5 1-3L.5 4h3L5 1z"
+                      fill="#6a737d"
+                    />
+                  </svg>
+                  <span class="url-verde">https://</span>
+                  <span>meu-projeto.edu.br</span>
+                </div>
+              </div>
+              <div
+                class="html-mockup-corpo"
+                aria-label="Estrutura de tags HTML"
+              >
+                <div class="mockup-estrutura-item">
+                  <div
+                    class="mockup-tag-cor"
+                    style="background: var(--cor-laranja)"
+                  ></div>
+                  <span class="mockup-tag-nome">&lt;html&gt;</span>
+                  <span class="mockup-tag-barra">lang="pt-br"</span>
+                </div>
+                <div class="mockup-estrutura-item mockup-tag-indented">
+                  <div class="mockup-tag-cor" style="background: #b392f0"></div>
+                  <span class="mockup-tag-nome">&lt;head&gt;</span>
+                  <span class="mockup-tag-barra">meta + title</span>
+                </div>
+                <div class="mockup-estrutura-item mockup-tag-indented">
+                  <div
+                    class="mockup-tag-cor"
+                    style="background: var(--cor-azul)"
+                  ></div>
+                  <span class="mockup-tag-nome">&lt;body&gt;</span>
+                </div>
+                <div class="mockup-estrutura-item" style="padding-left: 40px">
+                  <div
+                    class="mockup-tag-cor"
+                    style="background: var(--cor-verde)"
+                  ></div>
+                  <span class="mockup-tag-nome">&lt;header&gt;</span>
+                  <span class="mockup-tag-barra">nav + logo</span>
+                </div>
+                <div class="mockup-estrutura-item" style="padding-left: 40px">
+                  <div class="mockup-tag-cor" style="background: #f8c555"></div>
+                  <span class="mockup-tag-nome">&lt;main&gt;</span>
+                  <span class="mockup-tag-barra">hero + sections</span>
+                </div>
+                <div class="mockup-estrutura-item" style="padding-left: 40px">
+                  <div class="mockup-tag-cor" style="background: #9ecbff"></div>
+                  <span class="mockup-tag-nome">&lt;footer&gt;</span>
+                  <span class="mockup-tag-barra">créditos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal de código -->
+            <div class="terminal" style="margin-top: 20px">
+              <div class="terminal-cabecalho" aria-hidden="true">
+                <div class="terminal-bolinhas">
+                  <div class="terminal-bolinha terminal-bolinha-1"></div>
+                  <div class="terminal-bolinha terminal-bolinha-2"></div>
+                  <div class="terminal-bolinha terminal-bolinha-3"></div>
+                </div>
+                <div class="terminal-titulo">index.html</div>
+                <div class="terminal-badge">HTML5</div>
+              </div>
+              <div class="terminal-corpo">
+                <table
+                  class="codigo-tabela"
+                  aria-label="Exemplo de código HTML semântico"
+                >
+                  <tr>
+                    <td class="codigo-linha-num">1</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;section</span>
+                      <span class="tok-attr">class</span>=<span
+                        class="tok-string"
+                        >"calculadora"</span
+                      ><span class="tok-tag">&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">2</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;header&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">3</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;h2&gt;</span>Simulador de
+                      Juros<span class="tok-tag">&lt;/h2&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">4</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;/header&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">5</td>
+                    <td class="codigo-linha-conteudo"></td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">6</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;form</span>
+                      <span class="tok-attr">novalidate</span
+                      ><span class="tok-tag">&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">7</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;input</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">8</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-attr">type</span>=<span
+                        class="tok-string"
+                        >"number"</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">9</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-attr">placeholder</span>=<span
+                        class="tok-string"
+                        >"Valor inicial"</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">10</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-attr">required</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">11</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">/&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">12</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;button</span>
+                      <span class="tok-attr">type</span>=<span
+                        class="tok-string"
+                        >"submit"</span
+                      ><span class="tok-tag">&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">13</td>
+                    <td class="codigo-linha-conteudo">Calcular</td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">14</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;/button&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">15</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;/form&gt;</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">16</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">&lt;/section&gt;</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="terminal-rodape" aria-hidden="true">
+                <div class="terminal-rodape-dot"></div>
+                <span class="terminal-rodape-texto"
+                  >Válido • Semântico • Acessível</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- Seção CSS -->
+      <section class="secao-tecnologia" id="css" aria-labelledby="titulo-css">
+        <div class="glow-azul" aria-hidden="true"></div>
+
+        <div class="container grid-tecnologia">
+          <!-- Coluna esquerda: terminal -->
+          <div class="revelar">
+            <div class="numero-secao revelar" aria-hidden="true">02</div>
+
+            <div class="secao-cabecalho revelar revelar-2">
+              <div class="secao-titulo-row">
+                <h2
+                  class="secao-titulo"
+                  id="titulo-css"
+                  style="color: var(--cor-azul-claro)"
+                >
+                  CSS3
+                </h2>
+                <span class="secao-subtag" style="color: var(--cor-azul-claro)"
+                  >Moderno</span
+                >
+              </div>
+              <div class="secao-descricao-topo" style="color: var(--cor-azul)">
+                Experiência Visual
+              </div>
+            </div>
+
+            <!-- Terminal CSS -->
+            <div class="terminal">
+              <div class="terminal-cabecalho" aria-hidden="true">
+                <div class="terminal-bolinhas">
+                  <div class="terminal-bolinha terminal-bolinha-1"></div>
+                  <div class="terminal-bolinha terminal-bolinha-2"></div>
+                  <div class="terminal-bolinha terminal-bolinha-3"></div>
+                </div>
+                <div class="terminal-titulo">estilos.css</div>
+                <div class="terminal-badge">CSS3</div>
+              </div>
+              <div class="terminal-corpo">
+                <table
+                  class="codigo-tabela"
+                  aria-label="Exemplo de código CSS moderno"
+                >
+                  <tr>
+                    <td class="codigo-linha-num">1</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-cmt">/* Grid responsivo */</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">2</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">.container</span> {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">3</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-prop">display</span>:
+                      <span class="tok-valor">grid</span>;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">4</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-prop">grid-template-columns</span>:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">5</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-fn">repeat</span>(<span class="tok-num"
+                        >2</span
+                      >, <span class="tok-num">1fr</span>);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">6</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-prop">gap</span>:
+                      <span class="tok-num">40px</span>;
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">7</td>
+                    <td class="codigo-linha-conteudo">}</td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">8</td>
+                    <td class="codigo-linha-conteudo"></td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">9</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-cmt">/* Hover premium */</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">10</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-tag">.card</span
+                      ><span class="tok-kw">:hover</span> {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">11</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-prop">transform</span>:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">12</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-fn">translateY</span>(<span
+                        class="tok-num"
+                        >-10px</span
+                      >);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">13</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-prop">box-shadow</span>:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">14</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-fn">0 20px 40px</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">15</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-fn">rgba</span>(<span class="tok-num"
+                        >0,0,0,.3</span
+                      >);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">16</td>
+                    <td class="codigo-linha-conteudo">}</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="terminal-rodape" aria-hidden="true">
+                <div class="terminal-rodape-dot"></div>
+                <span class="terminal-rodape-texto"
+                  >Flexbox • Grid • Custom Properties</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna direita: cards + descrição -->
+          <div>
+            <p
+              class="secao-descricao revelar revelar-2"
+              style="margin-bottom: 36px"
+            >
+              O CSS transforma estrutura em experiência visual. Layouts
+              responsivos, animações suaves e design systems sólidos que
+              funcionam em qualquer tela.
+            </p>
+
+            <div class="lista-topicos revelar revelar-3">
+              <article class="card-topico card-css">
+                <div class="card-topico-icone" aria-hidden="true">📦</div>
+                <h3>Box Model</h3>
+                <p>
+                  Domine margin, padding, border e sizing para espaçamentos e
+                  alinhamentos precisos e consistentes.
+                </p>
+              </article>
+
+              <article class="card-topico card-css">
+                <div class="card-topico-icone" aria-hidden="true">⚡</div>
+                <h3>Flexbox & Grid</h3>
+                <p>
+                  Layouts modernos e responsivos para desktop, tablet e mobile
+                  sem depender de frameworks externos.
+                </p>
+              </article>
+
+              <article class="card-topico card-css">
+                <div class="card-topico-icone" aria-hidden="true">🎬</div>
+                <h3>Animações & Transições</h3>
+                <p>
+                  Hover states, keyframes e transições suaves que elevam a
+                  experiência do usuário.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção JS -->
+      <section class="secao-tecnologia" id="js" aria-labelledby="titulo-js">
+        <div class="glow-amarelo" aria-hidden="true"></div>
+
+        <div class="container grid-tecnologia">
+          <!-- Coluna esquerda: cards + info -->
+          <div>
+            <div class="numero-secao revelar" aria-hidden="true">03</div>
+
+            <div class="secao-cabecalho revelar revelar-2">
+              <div class="secao-titulo-row">
+                <h2
+                  class="secao-titulo"
+                  id="titulo-js"
+                  style="color: var(--cor-amarelo)"
+                >
+                  JavaScript
+                </h2>
+                <span class="secao-subtag" style="color: var(--cor-amarelo)"
+                  >Puro</span
+                >
+              </div>
+              <div
+                class="secao-descricao-topo"
+                style="color: var(--cor-amarelo)"
+              >
+                A Lógica da Web
+              </div>
+            </div>
+
+            <div class="lista-topicos revelar revelar-3">
+              <article class="card-topico card-js">
+                <div class="card-topico-icone" aria-hidden="true">🔀</div>
+                <h3>Estruturas de Decisão</h3>
+                <p>
+                  IF, ELSE e SWITCH para construir lógicas inteligentes e fluxos
+                  de controle precisos.
+                </p>
+              </article>
+
+              <article class="card-topico card-js">
+                <div class="card-topico-icone" aria-hidden="true">🔄</div>
+                <h3>Laços de Repetição</h3>
+                <p>
+                  Automatize tarefas complexas com FOR, WHILE e técnicas de
+                  iteração modernas.
+                </p>
+              </article>
+
+              <article class="card-topico card-js">
+                <div class="card-topico-icone" aria-hidden="true">🗂️</div>
+                <h3>Vetores & Objetos</h3>
+                <p>
+                  Estruture e manipule dados de forma escalável. Arrays, objetos
+                  e métodos nativos poderosos.
+                </p>
+              </article>
+
+              <article class="card-topico card-js">
+                <div class="card-topico-icone" aria-hidden="true">🖥️</div>
+                <h3>Manipulação do DOM</h3>
+                <p>
+                  Controle interfaces completas com JavaScript puro. Eventos,
+                  seleção e manipulação de elementos.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Coluna direita: info card + terminal -->
+          <div>
+            <!-- Card informativo -->
+            <div class="info-card revelar revelar-2">
+              <div class="info-card-topo">
+                <div class="info-card-icone" aria-hidden="true">💡</div>
+                <h3>Por que JavaScript puro?</h3>
+              </div>
+              <p>
+                Frameworks mudam. A lógica permanece. Dominar JavaScript puro
+                permite entender qualquer tecnologia moderna e adaptar-se ao
+                futuro.
+              </p>
+              <div class="info-card-beneficios">
+                <div class="info-card-beneficio">
+                  <div class="info-card-beneficio-icone" aria-hidden="true">
+                    ✓
+                  </div>
+                  Menos dependência de bibliotecas externas
+                </div>
+                <div class="info-card-beneficio">
+                  <div class="info-card-beneficio-icone" aria-hidden="true">
+                    ✓
+                  </div>
+                  Código mais leve e performático
+                </div>
+                <div class="info-card-beneficio">
+                  <div class="info-card-beneficio-icone" aria-hidden="true">
+                    ✓
+                  </div>
+                  Base sólida para qualquer framework
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal JS -->
+            <div class="terminal revelar revelar-3">
+              <div class="terminal-cabecalho" aria-hidden="true">
+                <div class="terminal-bolinhas">
+                  <div class="terminal-bolinha terminal-bolinha-1"></div>
+                  <div class="terminal-bolinha terminal-bolinha-2"></div>
+                  <div class="terminal-bolinha terminal-bolinha-3"></div>
+                </div>
+                <div class="terminal-titulo">app.js</div>
+                <div class="terminal-badge">ES2024</div>
+              </div>
+              <div class="terminal-corpo">
+                <table
+                  class="codigo-tabela"
+                  aria-label="Exemplo de código JavaScript puro"
+                >
+                  <tr>
+                    <td class="codigo-linha-num">1</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-cmt">// Seleciona o formulário</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">2</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-kw">const</span>
+                      <span class="tok-obj">form</span> =
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">3</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-obj">document</span>.<span class="tok-fn"
+                        >querySelector</span
+                      >(<span class="tok-str">"form"</span>);
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">4</td>
+                    <td class="codigo-linha-conteudo"></td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">5</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-cmt">// Evento de envio</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">6</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-obj">form</span>.<span class="tok-fn"
+                        >addEventListener</span
+                      >(
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">7</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-str">"submit"</span>, (<span
+                        class="tok-obj"
+                        >e</span
+                      >) =&gt; {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">8</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-obj">e</span>.<span class="tok-fn"
+                        >preventDefault</span
+                      >();
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">9</td>
+                    <td class="codigo-linha-conteudo"></td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">10</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-kw">if</span> (valor &gt;
+                      <span class="tok-num">1000</span>) {
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">11</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-obj">console</span>.<span class="tok-fn"
+                        >log</span
+                      >(
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">12</td>
+                    <td class="codigo-linha-conteudo">
+                      <span class="tok-str">"✓ Aprovado"</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">13</td>
+                    <td class="codigo-linha-conteudo">);</td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">14</td>
+                    <td class="codigo-linha-conteudo">}</td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">15</td>
+                    <td class="codigo-linha-conteudo">}</td>
+                  </tr>
+                  <tr>
+                    <td class="codigo-linha-num">16</td>
+                    <td class="codigo-linha-conteudo">);</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="terminal-rodape" aria-hidden="true">
+                <div class="terminal-rodape-dot"></div>
+                <span class="terminal-rodape-texto"
+                  >Sem frameworks • Puro • Escalável</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+    <!-- Seção FOOTER -->
+    <footer role="contentinfo">
+      <div class="footer-grade" aria-hidden="true"></div>
+      <div class="container">
+        <div class="footer-conteudo">
+          <div class="footer-logo">
+            <span class="logo-icone" aria-hidden="true">&lt;/&gt;</span>
+            <span>Edécio Fernando</span>
+          </div>
+
+          <p class="footer-texto">
+            © 2026 Edécio Fernando • Landing Page Acadêmica
+          </p>
+
+          <nav class="footer-links" aria-label="Links do rodapé">
+            <a href="#inicio">Início</a>
+            <a href="#autor">Autor</a>
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#js">JS</a>
+          </nav>
+        </div>
+      </div>
+      <span class="footer-dev" aria-label="Desenvolvido por">
+        <span>Desenvolvido por</span>
+        <span class="footer-dev-ponto" aria-hidden="true"></span>
+        <span class="footer-dev-nome">Bernardo Netto</span>
+      </span>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button
+      class="botao-topo"
+      id="ir-topo"
+      aria-label="Voltar ao topo da página"
+    >
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M8 12V4M4 8l4-4 4 4"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
